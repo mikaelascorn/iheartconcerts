@@ -1,0 +1,50 @@
+.welcomeWallpaper {
+  max-width: 100%;
+  background-image: url(../../assets/pattern6.png);
+  background-position: center;
+  background-size: cover;
+}
+.welcomePage {
+  position: absolute;
+  background-color: rgba(255,255,255,0.75);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 30px;  
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 10px 10px 20px rgba(37, 63, 122,0.7);
+  h2 {
+    margin-top: 0px;
+  }
+}
+.welcomeWrapper {
+  max-width: 95%;
+  margin: 0 auto;
+  height: 100vh;  
+  position: relative;
+  h1 {
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+@media(min-width: 750px) {
+  .welcomeWrapper {
+    max-width: 80%;
+    h2 {
+      padding: 0px 30px;
+    }
+  }
+}
+@media(min-width: 1600px) {
+  .welcomeWrapper { 
+    max-width: 55%;
+    h2 {
+      padding: 0px 50px;
+    }
+  }
+}

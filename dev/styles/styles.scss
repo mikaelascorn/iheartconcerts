@@ -1,0 +1,104 @@
+@import 'setup';
+@import 'utils';
+@import 'typography';
+@import 'welcomepage';
+@import 'homepage';
+@import 'goodbye';
+
+/*==========================
+GLOBAL STYLES
+==========================*/ 
+.journalInputs {
+  margin: 0 auto;
+  label{
+    width: 100%;
+  }
+}
+.journalInfo {
+  text-align: center;
+  margin: 10px auto;
+  display: block;
+  width: 100%;
+
+  label {
+    display: block;
+    width: 100%;
+  }
+}
+button:hover,
+.showTickets:hover,
+input[type=submit]:hover {
+  background-color: $pink;
+}
+h1 {
+  img {
+    max-width: 100px;
+  }
+}
+button,
+input[type=text],
+input[type=submit],
+.showTickets,
+textarea {
+  background-color: white;
+  border: 2px solid $blue;
+  transition: all 0.5s;
+  box-shadow: 3px 3px 15px rgba(37, 63, 122,0.7);
+  padding: 18px 15px;
+  margin: 5px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  border-radius: 3px;
+}
+input[type=text]:hover,
+textarea:focus,
+textarea:active,
+textarea:hover {
+  border: 2px solid $pink;
+}
+
+/*==========================
+MEDIA QUERIES
+==========================*/
+@media(min-width: 750px) {
+  .journalFloat {
+    max-width: 50%;
+    float: left;
+    .journalInputs {
+      float: left;
+      width: calc( 100% / 2 );
+    }   
+  }
+}
+
+@media(min-width: 1024px) {
+  .journalMemLoc  {
+    float: left;
+    width: calc(( 100% / 2 ));
+    padding: 20px 10px;
+  }  
+  input#location {
+    min-height: 80px;
+  } 
+}
+
+@media(min-width: 1600px) {
+  .journalInfo  {
+      width: 25%;
+    }  
+
+    padding: 10px 20px;
+    .journalInputs {
+      float: left;
+      width: calc( 100% / 4 );
+      input#date,
+      input#artist {
+        min-height: 80px;
+      }
+    }  
+    .journalFloat {
+      padding: 20px 10px;
+
+    }
+}
+

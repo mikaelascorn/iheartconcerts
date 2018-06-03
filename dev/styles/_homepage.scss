@@ -1,0 +1,152 @@
+.homepageWallpaper {
+  max-width: 100%;
+  background-image: url(../../assets/pattern7.png);
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+.homepageWrapper {
+  background-color: rgba(255,255,255,0.85);
+  width: 95%;
+  padding: 20px 10px;
+  text-align: center;
+  margin: 0px auto;
+  height: 100%;
+  h1 {
+    padding-top: 35px;
+  }
+}
+.hide {
+  display:none;
+}
+.artistNameImg {
+  background: white;
+  border: 3px solid $grey;
+  border-radius: 3px;
+  max-width: 350px;
+  margin: 30px auto;
+  img {
+    width: 100%; 
+    display: block;
+    border-radius: 0 0 3px 3px;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+}
+.postedName {
+  margin: 10px;
+}
+.artistInputs {
+  max-width: 80%;
+  margin: 0 auto;
+}
+// For some reason, the ul for showItem was getting padding-left from something.
+.showList {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.showItems {
+  list-style: none;
+  border: 2px solid $blue;
+  border-radius: 10px;
+  margin: 15px;
+  text-align: left;
+  padding: 30px;
+  background-color: white;
+  transition: all 0.5s;
+  .showItem {
+    text-decoration: none;
+  }
+  .showTickets {
+    font-size: 2rem;
+    border: 2px solid $blue;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+.showItems:hover {
+  transform: scale(1.03);
+}
+.journalForm {
+  padding-top: 15px;
+}
+.journalList {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.searchBandItems {
+  list-style: none;
+  border: 2px solid $blue;
+  box-shadow: 3px 3px 15px rgba(37, 63, 122,0.7);
+  border-radius: 3px;
+  margin: 15px;
+  padding: 30px;
+  text-align: left;
+  background-color: white;
+  button {
+    margin: 0 auto;
+    display: block;
+  }
+  .firstItem {
+    margin-top: 0px;
+  }
+}
+.signInInfo {
+  display: block;
+  text-align: right;
+  .logoutButton {
+    float: right;
+    display:block;
+    line-height: 20px;
+    padding: 5px;
+  }
+  .googlePhoto {
+    float: right;
+    display: block;
+    max-width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2px solid $blue;
+  }
+}
+
+@media(min-width: 750px) {
+  .homepageWrapper {
+    max-width: 75%;
+    padding: 20px 50px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .artistNameImg {
+    max-width: 400px;
+  }
+  .homepageWrapper {
+    max-width: 70%;
+  }
+  .journalList {
+    max-width: 100%;
+  }
+  .showItems {
+    float: left;
+    width: calc(( 100% / 2 ) - 30px );
+    min-height: 200px;
+  }
+  .searchBandItems {
+    float: left;
+    width: calc(( 100% / 2 ) - 30px);
+  }
+}
+@media(min-width: 1600px) {
+  .showItems {
+    width: calc(( 100% / 3 ) - 30px);
+    min-height: 200px;
+  }
+  .searchBandItems {
+    width: calc(( 100% / 3 ) - 30px);
+    min-height: 300px;
+  }
+}

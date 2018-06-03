@@ -1,0 +1,15 @@
+.godbyePage {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+}
+p a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+  }
+p a:hover {
+  color: $pink;
+}
+.goodbyePage img {
+  max-width: 250px;
+  
+}

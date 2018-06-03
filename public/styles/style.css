@@ -1,0 +1,447 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  color: #282828; }
+
+body {
+  font-family: 'Muli', sans-serif; }
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 35px; }
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.57;
+  padding-top: 25px; }
+
+.thankYou {
+  margin-bottom: 0px; }
+
+h3 {
+  font-size: 2rem; }
+
+p, label, input[type="text"] {
+  font-size: 1.7rem;
+  line-height: 1.5rem; }
+
+a {
+  color: #282828; }
+
+.question {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #253F7A; }
+
+@media (min-width: 460px) {
+  h1 {
+    font-size: 6rem; }
+  h2 {
+    font-size: 2.5rem; } }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 8rem; } }
+
+.welcomeWallpaper {
+  max-width: 100%;
+  background-image: url(../../assets/pattern6.png);
+  background-position: center;
+  background-size: cover; }
+
+.welcomePage {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.75);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 10px 10px 20px rgba(37, 63, 122, 0.7); }
+  .welcomePage h2 {
+    margin-top: 0px; }
+
+.welcomeWrapper {
+  max-width: 95%;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative; }
+  .welcomeWrapper h1 {
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+
+@media (min-width: 750px) {
+  .welcomeWrapper {
+    max-width: 80%; }
+    .welcomeWrapper h2 {
+      padding: 0px 30px; } }
+
+@media (min-width: 1600px) {
+  .welcomeWrapper {
+    max-width: 55%; }
+    .welcomeWrapper h2 {
+      padding: 0px 50px; } }
+
+.homepageWallpaper {
+  max-width: 100%;
+  background-image: url(../../assets/pattern7.png);
+  background-repeat: repeat;
+  min-height: 100vh; }
+
+.homepageWrapper {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 95%;
+  padding: 20px 10px;
+  text-align: center;
+  margin: 0px auto;
+  height: 100%; }
+  .homepageWrapper h1 {
+    padding-top: 35px; }
+
+.hide {
+  display: none; }
+
+.artistNameImg {
+  background: white;
+  border: 3px solid #535353;
+  border-radius: 3px;
+  max-width: 350px;
+  margin: 30px auto; }
+  .artistNameImg img {
+    width: 100%;
+    display: block;
+    border-radius: 0 0 3px 3px; }
+  .artistNameImg h3 {
+    font-size: 3rem; }
+
+.postedName {
+  margin: 10px; }
+
+.artistInputs {
+  max-width: 80%;
+  margin: 0 auto; }
+
+.showList {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.showItems {
+  list-style: none;
+  border: 2px solid #253F7A;
+  border-radius: 10px;
+  margin: 15px;
+  text-align: left;
+  padding: 30px;
+  background-color: white;
+  transition: all 0.5s; }
+  .showItems .showItem {
+    text-decoration: none; }
+  .showItems .showTickets {
+    font-size: 2rem;
+    border: 2px solid #253F7A;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto; }
+
+.showItems:hover {
+  transform: scale(1.03); }
+
+.journalForm {
+  padding-top: 15px; }
+
+.journalList {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.searchBandItems {
+  list-style: none;
+  border: 2px solid #253F7A;
+  box-shadow: 3px 3px 15px rgba(37, 63, 122, 0.7);
+  border-radius: 3px;
+  margin: 15px;
+  padding: 30px;
+  text-align: left;
+  background-color: white; }
+  .searchBandItems button {
+    margin: 0 auto;
+    display: block; }
+  .searchBandItems .firstItem {
+    margin-top: 0px; }
+
+.signInInfo {
+  display: block;
+  text-align: right; }
+  .signInInfo .logoutButton {
+    float: right;
+    display: block;
+    line-height: 20px;
+    padding: 5px; }
+  .signInInfo .googlePhoto {
+    float: right;
+    display: block;
+    max-width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2px solid #253F7A; }
+
+@media (min-width: 750px) {
+  .homepageWrapper {
+    max-width: 75%;
+    padding: 20px 50px; } }
+
+@media (min-width: 1024px) {
+  .artistNameImg {
+    max-width: 400px; }
+  .homepageWrapper {
+    max-width: 70%; }
+  .journalList {
+    max-width: 100%; }
+  .showItems {
+    float: left;
+    width: calc(( 100% / 2 ) - 30px);
+    min-height: 200px; }
+  .searchBandItems {
+    float: left;
+    width: calc(( 100% / 2 ) - 30px); } }
+
+@media (min-width: 1600px) {
+  .showItems {
+    width: calc(( 100% / 3 ) - 30px);
+    min-height: 200px; }
+  .searchBandItems {
+    width: calc(( 100% / 3 ) - 30px);
+    min-height: 300px; } }
+
+.godbyePage {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8); }
+
+p a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s; }
+
+p a:hover {
+  color: #D187C0; }
+
+.goodbyePage img {
+  max-width: 250px; }
+
+/*==========================
+GLOBAL STYLES
+==========================*/
+.journalInputs {
+  margin: 0 auto; }
+  .journalInputs label {
+    width: 100%; }
+
+.journalInfo {
+  text-align: center;
+  margin: 10px auto;
+  display: block;
+  width: 100%; }
+  .journalInfo label {
+    display: block;
+    width: 100%; }
+
+button:hover,
+.showTickets:hover,
+input[type=submit]:hover {
+  background-color: #D187C0; }
+
+h1 img {
+  max-width: 100px; }
+
+button,
+input[type=text],
+input[type=submit],
+.showTickets,
+textarea {
+  background-color: white;
+  border: 2px solid #253F7A;
+  transition: all 0.5s;
+  box-shadow: 3px 3px 15px rgba(37, 63, 122, 0.7);
+  padding: 18px 15px;
+  margin: 5px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  border-radius: 3px; }
+
+input[type=text]:hover,
+textarea:focus,
+textarea:active,
+textarea:hover {
+  border: 2px solid #D187C0; }
+
+/*==========================
+MEDIA QUERIES
+==========================*/
+@media (min-width: 750px) {
+  .journalFloat {
+    max-width: 50%;
+    float: left; }
+    .journalFloat .journalInputs {
+      float: left;
+      width: calc( 100% / 2); } }
+
+@media (min-width: 1024px) {
+  .journalMemLoc {
+    float: left;
+    width: calc(( 100% / 2 ));
+    padding: 20px 10px; }
+  input#location {
+    min-height: 80px; } }
+
+@media (min-width: 1600px) {
+  .journalInfo {
+    width: 25%; }
+  padding: 10px 20px;
+  .journalInputs {
+    float: left;
+    width: calc( 100% / 4); }
+    .journalInputs input#date,
+    .journalInputs input#artist {
+      min-height: 80px; }
+  .journalFloat {
+    padding: 20px 10px; } }
