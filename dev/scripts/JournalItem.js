@@ -11,7 +11,7 @@ const JournalItem = (props) => {
       <p className="searchBandLocation searchBandItem">{props.location}</p>
       <p className="searchBandMemories searchBandItem question"><em>Memories from the Concert</em></p>
       <p className="searchBandMemoriesText searchBandItem">{props.memory}</p>
-      <button onClick={() => props.removeJournal(props.firebaseKey)}>Remove</button>
+      <button onClick={() => props.removeJournal(props.firebaseKey)}>X</button>
     </li>
   )
 }

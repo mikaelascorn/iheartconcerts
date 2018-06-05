@@ -25,27 +25,35 @@ GLOBAL STYLES
     width: 100%;
   }
 }
-button:hover,
-.showTickets:hover,
-input[type=submit]:hover {
+.login,
+input[type=submit],
+.showTickets:hover {
   background-color: $pink;
+  border: 2px solid $pink;
+}
+.login:hover,
+input[type=submit]:hover {
+  border: 2px solid $blue;
 }
 h1 {
   img {
     max-width: 100px;
   }
 }
-button,
 input[type=text],
-input[type=submit],
 .showTickets,
 textarea {
   background-color: white;
   border: 2px solid $blue;
+}
+.login,
+input[type=submit],
+input[type=text],
+.showTickets,
+textarea {
   transition: all 0.5s;
   box-shadow: 3px 3px 15px rgba(37, 63, 122,0.7);
   padding: 18px 15px;
-  margin: 5px;
   font-size: 1.8rem;
   line-height: 2rem;
   border-radius: 3px;

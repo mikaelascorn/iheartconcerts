@@ -249,7 +249,7 @@ class Homepage extends React.Component {
                 </div>
                 <h1>I <img src="../../assets/logo-final.svg" alt="I heart concerts logo" /> Concerts</h1>
                 <div>
-                  <h2>Hi, {this.state.displayName}</h2>
+                  <h2><span><em>Hi,</em></span> {this.state.displayName}</h2>
                 </div>
                 <form className="bandSearchForm" onSubmit={this.handleSubmitUpcoming}>
                   <h2>Upcoming Concerts</h2>
@@ -271,6 +271,7 @@ class Homepage extends React.Component {
                         key={i}
                         venue={showItem.venue.name} //Check 2-level-deep labels -ok?
                         city={showItem.venue.city}
+                        country={showItem.venue.country}
                         date={showItem.datetime}
                         url={showItem.offers[0].url}
                       />
@@ -326,8 +327,8 @@ class Homepage extends React.Component {
                 <div className="welcomePage goodbyePage">
                   <h2 className="thankYou">Thanks for checking us out.</h2>
                   <h2>See you on the dancefloor!</h2>
-                  <img className="animated swing infinate" isVisible={true} src="assets/logo-final.svg" alt="I Heart Concerts Logo" />
-                  <p>Made by <a href="http://www.clintdevs.live" target="_blank" >Clint Lee</a> <a href="https://www.mikaelamade.com" target="_blank" >Mikaela Scornaienchi</a> <a href="http://www.nataleecodes.com" target="_blank" >Natalee Blagden</a></p>
+                  <img className="animated swing infinate" src="../assets/logo-final.svg" alt="I Heart Concerts Logo" />
+                  <p>Made by <a href="http://www.clintdevs.live" target="_blank" >Clint Lee</a> | <a href="https://www.mikaelamade.com" target="_blank" >Mikaela Scornaienchi</a> | <a href="http://www.nataleecodes.com" target="_blank" >Natalee Blagden</a></p>
                 </div>
               </div>
             </div>

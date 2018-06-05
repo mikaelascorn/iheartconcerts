@@ -26,9 +26,39 @@
   position: relative;
   h1 {
     margin-top: 0px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    img {
+      position: relative;
+      bottom: 0px;
+    }
+  }
+}
+
+@media(min-width: 375px) {
+  .welcomeWrapper {
+    h1 {
+      img {
+        bottom: -35px;
+      }
+    }
+  }
+}
+
+@media(min-width: 459px) {
+  .welcomeWrapper {
+    h1 {
+      img {
+        bottom: -15px;
+      }
+    }
+  }
+}
+@media(min-width: 560px) {
+  .welcomeWrapper {
+    h1 {
+      img {
+        bottom: -30px;
+      }
+    }
   }
 }
 
@@ -37,6 +67,9 @@
     max-width: 80%;
     h2 {
       padding: 0px 30px;
+      img {
+        bottom: -10px;
+      }
     }
   }
 }

@@ -205,16 +205,30 @@ a {
   height: 100vh;
   position: relative; }
   .welcomeWrapper h1 {
-    margin-top: 0px;
-    justify-content: center;
-    align-items: center;
-    display: flex; }
+    margin-top: 0px; }
+    .welcomeWrapper h1 img {
+      position: relative;
+      bottom: 0px; }
+
+@media (min-width: 375px) {
+  .welcomeWrapper h1 img {
+    bottom: -35px; } }
+
+@media (min-width: 459px) {
+  .welcomeWrapper h1 img {
+    bottom: -15px; } }
+
+@media (min-width: 560px) {
+  .welcomeWrapper h1 img {
+    bottom: -30px; } }
 
 @media (min-width: 750px) {
   .welcomeWrapper {
     max-width: 80%; }
     .welcomeWrapper h2 {
-      padding: 0px 30px; } }
+      padding: 0px 30px; }
+      .welcomeWrapper h2 img {
+        bottom: -10px; } }
 
 @media (min-width: 1600px) {
   .welcomeWrapper {
@@ -236,7 +250,20 @@ a {
   margin: 0px auto;
   height: 100%; }
   .homepageWrapper h1 {
-    padding-top: 35px; }
+    padding-top: 35px;
+    margin: 20px 0px; }
+    .homepageWrapper h1 img {
+      position: relative;
+      bottom: -30px; }
+  .homepageWrapper h2 span {
+    color: #535353; }
+
+.bandSearchForm {
+  background-color: rgba(83, 83, 83, 0.3);
+  padding-bottom: 20px;
+  border-radius: 3px; }
+  .bandSearchForm input[type=submit] {
+    margin-top: 15px; }
 
 .hide {
   display: none; }
@@ -269,7 +296,8 @@ a {
 .showItems {
   list-style: none;
   border: 2px solid #253F7A;
-  border-radius: 10px;
+  box-shadow: 3px 3px 15px rgba(37, 63, 122, 0.7);
+  border-radius: 3px;
   margin: 15px;
   text-align: left;
   padding: 30px;
@@ -287,13 +315,18 @@ a {
 .showItems:hover {
   transform: scale(1.03); }
 
-.journalForm {
-  padding-top: 15px; }
-
 .journalList {
   width: 100%;
   margin: 0 auto;
   padding: 0; }
+
+.journalInputs {
+  margin-bottom: 20px; }
+  .journalInputs input,
+  .journalInputs textarea {
+    margin-top: 20px; }
+  .journalInputs .journalInfo {
+    padding: 0px; }
 
 .searchBandItems {
   list-style: none;
@@ -303,12 +336,19 @@ a {
   margin: 15px;
   padding: 30px;
   text-align: left;
-  background-color: white; }
+  background-color: white;
+  position: relative; }
   .searchBandItems button {
-    margin: 0 auto;
-    display: block; }
-  .searchBandItems .firstItem {
-    margin-top: 0px; }
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px; }
+  .searchBandItems button:hover {
+    color: #D187C0; }
+
+.firstItem {
+  margin-top: 0px; }
 
 .signInInfo {
   display: block;
@@ -317,7 +357,12 @@ a {
     float: right;
     display: block;
     line-height: 20px;
-    padding: 5px; }
+    padding: 5px;
+    background-color: #D187C0;
+    border: 2px solid #D187C0;
+    border-radius: 3px; }
+  .signInInfo .logoutButton:hover {
+    border: 2px solid #253F7A; }
   .signInInfo .googlePhoto {
     float: right;
     display: block;
@@ -329,7 +374,10 @@ a {
 @media (min-width: 750px) {
   .homepageWrapper {
     max-width: 75%;
-    padding: 20px 50px; } }
+    padding: 20px 50px; }
+    .homepageWrapper h1 img {
+      position: relative;
+      bottom: -15px; } }
 
 @media (min-width: 1024px) {
   .artistNameImg {
@@ -341,10 +389,13 @@ a {
   .showItems {
     float: left;
     width: calc(( 100% / 2 ) - 30px);
-    min-height: 200px; }
+    min-height: 340px; }
   .searchBandItems {
     float: left;
-    width: calc(( 100% / 2 ) - 30px); } }
+    width: calc(( 100% / 2 ) - 30px); }
+  .bandSearchForm input[type=submit] {
+    margin-top: 0px;
+    margin-left: 15px; } }
 
 @media (min-width: 1600px) {
   .showItems {
@@ -365,7 +416,7 @@ p a {
 p a:hover {
   color: #D187C0; }
 
-.goodbyePage img {
+.goodbyePage .animated {
   max-width: 250px; }
 
 /*==========================
@@ -385,25 +436,33 @@ GLOBAL STYLES
     display: block;
     width: 100%; }
 
-button:hover,
-.showTickets:hover,
+.login,
+input[type=submit],
+.showTickets:hover {
+  background-color: #D187C0;
+  border: 2px solid #D187C0; }
+
+.login:hover,
 input[type=submit]:hover {
-  background-color: #D187C0; }
+  border: 2px solid #253F7A; }
 
 h1 img {
   max-width: 100px; }
 
-button,
 input[type=text],
-input[type=submit],
 .showTickets,
 textarea {
   background-color: white;
-  border: 2px solid #253F7A;
+  border: 2px solid #253F7A; }
+
+.login,
+input[type=submit],
+input[type=text],
+.showTickets,
+textarea {
   transition: all 0.5s;
   box-shadow: 3px 3px 15px rgba(37, 63, 122, 0.7);
   padding: 18px 15px;
-  margin: 5px;
   font-size: 1.8rem;
   line-height: 2rem;
   border-radius: 3px; }
